@@ -1,0 +1,25 @@
+print('В каком пространстве надо найти расстояние между точками, 2D ил 3D?')
+print('Введите 2, если в 2D, или 3, если в 3D: ')
+d = int(input())
+distance_AB = 0
+
+if d == 2:
+    print('Введите две координаты точки А: ')
+    xa = int(input('xa = '))
+    ya = int(input('ya = '))
+    print('Введите две координаты точки B: ')
+    xb = int(input('xb = '))
+    yb = int(input('yb = '))
+    distance_AB = ((xb - xa) ** 2 + (yb - ya) ** 2) ** (0.5)
+    print(f'Расстояние АВ = {round(distance_AB, 2)}')
+elif d == 3:
+    print('Введите три координаты точки А: ')
+    xa = int(input('xa = '))
+    ya = int(input('ya = '))
+    za = int(input('za = '))
+    print('Введите две координаты точки B: ')
+    xb = int(input('xb = '))
+    yb = int(input('yb = '))
+    zb = int(input('zb = '))
+    distance_AB = ((xb - xa) ** 2 + (yb - ya) ** 2 + (zb - za) ** 2) ** (0.5)
+    print(f'Расстояние АВ = {round(distance_AB, 2)}')
