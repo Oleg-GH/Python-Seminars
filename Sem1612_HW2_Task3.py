@@ -20,9 +20,7 @@ print()
 print('Исходный список: ')
 print(myList)
 
-ShufList1 = listShuffle(myList)
-
 print()
 print('Перемешанный список: ')
-print(ShufList1)    
+print(listShuffle(myList))    
 
