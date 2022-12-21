@@ -3,9 +3,14 @@
 
 number = int(input('Введите целое число: '))
 
-for item in range(number * (-1), number + 1):
-    print(item, end = " ")
-print()    
+my_list = []
+
+for item in range(-number, number+abs(number)//number, abs(number)//number):
+    my_list.append(item)
+
+
+print(*my_list, sep =', ')
+    
 
 
 

@@ -18,4 +18,12 @@ num = float(input('Введите вещественное число:  '))
 print(f'У числа {num} -> сумма цифр равна {numDigitSum(num)}')            
 
 
-            
+# from decimal import Decimal
+# num = abs(Decimal(input('Введите вещественное число: ')))
+# while num != int(num):
+#     num *= 10
+# my_sum = 0
+# while num > 0:
+#     my_sum += int(num % 10)
+#     num /= 10
+# print(my_sum)            # еще один вариант через Decimal
