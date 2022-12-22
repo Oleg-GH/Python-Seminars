@@ -7,7 +7,7 @@ my_list = []
 my_length = random.randint(3, 10)
 
 for _ in range(my_length):
-    my_list.append(int(random.uniform(1, 10)))
+    my_list.append(random.randint(1, 10))
 
 index = 1
 sum = 0
