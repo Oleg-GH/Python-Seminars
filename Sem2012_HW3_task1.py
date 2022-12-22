@@ -13,7 +13,7 @@ index = 1
 sum = 0
 my_list1 = []
 
-while index < len(my_list):    # < my_length
+while index < len(my_list):             # < my_length
     sum += my_list[index]
     my_list1.append(my_list[index])
     index += 2
