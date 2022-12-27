@@ -16,4 +16,27 @@ else:
 # if len(number) > 1:
 #     print(number[1][0])
 # else:
-#     print ('Число целое')    
+#     print ('Число целое')   
+# 
+
+# Вариант 3
+# 
+# num = input("Введите число: ")
+# if '.' in num:
+#   index_num = num.find('.')
+#   print(num[index_num])
+# elif ',' in num:
+#   index_num = num.find('.')
+#   print(num[index_num])
+# else:
+#   print('No')
+
+
+# Вариант 4 (не работает с отрицат.числами)
+
+# num = input("Введите число: ")
+# if num.isdigit():
+#     print('Нет')
+# else:
+#     num = int(float(num) * 10 % 10)
+#     print(num)
