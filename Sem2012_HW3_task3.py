@@ -5,8 +5,8 @@ import random
 
 my_list = []
 
-for _ in range(10):
-    index = random.randint(0, 3)
+for _ in range(random.randint(2, 10)):
+    index = random.randint(0, 5)
     my_list.append(round(random.uniform(0, 10), index))
 
 fractional_parts = []
