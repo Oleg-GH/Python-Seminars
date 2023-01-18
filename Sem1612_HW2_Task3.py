@@ -4,23 +4,21 @@
 from random import randint as RI
 
 def listShuffle(yourList):
-    myList1 = []
     for j in range(len(yourList)):
         k = RI(0, len(yourList) - 1)        # случайное число, ограниченое длиной списка
-        myList1 += yourList[k]
-        myList.remove(yourList[k])          # длина списка уменьшается с каждой итерацией
-    return myList1    
+        yourList.append(yourList.pop(k))    # выдергиваем случайный элемент и вставляем его в конец
+        # yourList[j], yourList[k] = yourList[k], yourList[j]     # еще один способ перемешивания списка
+      
 
 myLength = int(input('Введите длину списка:  '))
-myList = []
-for i in range(myLength):
-    myList.append(input())
+myList = [i for i in range(myLength)]
 
 print()
 print('Исходный список: ')
-print(myList)
+print(*myList)
 
 print()
 print('Перемешанный список: ')
-print(listShuffle(myList))    
+listShuffle(myList)
+print(*myList)    
 
