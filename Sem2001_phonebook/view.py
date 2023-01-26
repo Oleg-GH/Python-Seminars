@@ -8,7 +8,7 @@ def main_menu() -> int:   # получаем пункт меню
                 'Изменить контакт',
                 'Удалить контакт',
                 #'Сохранить изменения в БД',
-                'Выход (любое число, кроме 1-6)'
+                'Выход (любой символ, кроме 1-6)'
                 ]
     for i in range(len(menu_list)):
         print(f'\t{i + 1}. {menu_list[i]}')
@@ -19,7 +19,9 @@ def main_menu() -> int:   # получаем пункт меню
                 user_input = 7            
             break
         except  ValueError:
-            print('Неверный формат.')
+            #print('Неверный формат.')
+            user_input = 7
+            break
         # except Exception:
         #     print('Необходимо ввести число от 1 до 7.')
     return user_input
